@@ -1,3 +1,0 @@
-_satellite.pushAsyncScript(function(event, target, $variables){
-  $script('https://cse.google.com/cse.js?cx='+ TMCONFIG.publicSectionParams['search.googleCustomSearchEngineId']);
-});

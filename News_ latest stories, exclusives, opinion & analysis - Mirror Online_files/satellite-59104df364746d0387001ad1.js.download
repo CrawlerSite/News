@@ -1,6 +1,0 @@
-_satellite.pushAsyncScript(function(event, target, $variables){
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-var gaAccountId = _satellite.getVar("Collect_ScriptConfig").googleAnalytics.accountId;
-ga('create', gaAccountId , 'auto');
-ga('send', 'pageview');
-});

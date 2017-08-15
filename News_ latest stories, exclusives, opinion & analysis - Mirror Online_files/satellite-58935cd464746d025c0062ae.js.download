@@ -1,3 +1,0 @@
-_satellite.pushAsyncScript(function(event, target, $variables){
-  $script('http://d3cjsxxlvdcii8.cloudfront.net/main-66ea6cf802.js');
-});

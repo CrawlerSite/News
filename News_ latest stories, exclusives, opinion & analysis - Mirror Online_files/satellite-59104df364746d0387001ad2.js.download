@@ -1,4 +1,0 @@
-_satellite.pushAsyncScript(function(event, target, $variables){
-  $script('https://www.google-analytics.com/analytics.js');
-
-});
