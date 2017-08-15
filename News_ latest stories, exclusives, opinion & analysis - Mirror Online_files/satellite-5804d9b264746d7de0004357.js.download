@@ -1,0 +1,4 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  $script('http://fo-api.omnitagjs.com/fo-api/ot.js');
+
+});

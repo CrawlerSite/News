@@ -1,0 +1,18 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  var collectReferrerArea;
+
+if(!collectReferrerArea) {
+  collectReferrerArea = true;
+  var referrerArea = localStorage.getItem('TM_ReferrerArea');
+  if (referrerArea) {
+    _satellite.notify("Collecting/Storing ReferrerArea -> " + referrerArea , 1);
+    sessionStorage.setItem('TM_ReferrerArea', referrerArea);
+    localStorage.removeItem('TM_ReferrerArea');
+  } else {
+  	_satellite.notify("No ReferrerArea found", 1);
+  }  
+}
+
+
+
+});

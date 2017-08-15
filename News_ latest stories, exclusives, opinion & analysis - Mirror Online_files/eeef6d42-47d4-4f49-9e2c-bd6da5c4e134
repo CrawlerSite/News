@@ -1,0 +1,9 @@
+    (function (doc, elementType) {
+        var beemrayWebsdk = doc.createElement(elementType),
+            script = doc.getElementsByTagName(elementType)[0];
+        beemrayWebsdk.src = 'https://sdk.beemray.com/trinity/sdk/websdk.static';
+        beemrayWebsdk.async = true;
+        
+        script.parentNode.insertBefore(beemrayWebsdk, script);
+        beemrayWebsdk.parentNode.removeChild(beemrayWebsdk);
+    } (document, 'script'));

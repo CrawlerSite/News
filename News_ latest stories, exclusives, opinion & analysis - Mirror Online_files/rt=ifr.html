@@ -1,0 +1,33 @@
+
+<!-- saved from url=(0203)http://bcp.crwdcntrl.net/5/c=9458/rand=211645988/pv=y/int=%23OpR%2336594%23www.mirror.co.uk%20%3A%20Total%20Site%20Traffic/int=%23OpR%2337898%23www.mirror.co.uk%20%3A%20Site%20Section%20%3A%20news/rt=ifr -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color:transparent; width: 100%; text-align: center;">
+<div><img src="./382416.gif" width="1" height="1"><img src="./pixel" height="1" width="1"><script>
+function processTargusData(json)
+{
+   if (json != null) {
+       if (json.targus != null) {
+            u = "";
+            v = "map";
+            if (json.targus.sk != null && json.targus.sk != "") {
+                u += "/tp=TARG/tpid=" + json.targus.sk;
+            }
+            if (json.targus.age != null && json.targus.age != "") {
+                u += "/genp=" + (new Date().getFullYear() - json.targus.age);
+                v = "5";
+            }
+            if (json.targus.gender != null && json.targus.gender != "") {
+                u += "/genp=gender%20-%20" + json.targus.gender;
+                v = "5";
+            }
+            if (u != "") {
+              var img = new Image();
+              img.src = "http://bcp.crwdcntrl.net/" + v + "/c=368" + u;
+              document.body.appendChild(img);
+            }
+        }
+   }
+}
+</script>
+<script src="./g.json"></script><img src="./5907" width="1" height="1"><img src="http://tap.rubiconproject.com/oz/feeds/lotame/tokens?pk=BP6A-G754QKW2&amp;afu=94a6ef0bc5f75bf39a24d74a720dde5" height="1" width="1" style="display: none !important;"><img src="http://match.adsrvr.org/track/cmf/generic?ttd_pid=lotame&amp;ttd_puid=94a6ef0bc5f75bf39a24d74a720dde5&amp;ttd_tpi=1" width="1" height="1" style="display: none !important;"><div><img src="./getuid" height="1" width="1"></div><img src="./pixel(1)" height="1" width="1"><img src="./usync" height="1" width="1"><img src="./bsTd8NdE" width="1" height="1"><img src="http://r.nexac.com/e/getdata.xgi?dt=br&amp;pkey=ermz52tcyln62&amp;ru=http%3A%2F%2Fbcp.crwdcntrl.net%2Fmap%2Fc%3D1787%2Ftp%3DDLGX%2Ftpid%3D%3Cna_id%3E" height="1" width="1" style="display: none !important;"></div><img src="./tpid=164220502398000764856">
+
+</body></html>

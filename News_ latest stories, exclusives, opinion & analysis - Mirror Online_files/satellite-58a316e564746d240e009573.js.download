@@ -1,0 +1,24 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  var userID = localStorage.getItem('TM_USERID');
+if(userID) {
+  _satellite.notify("Collecting/Storing UserId -> " + userID, 1);
+  if (window.digitalData){ 
+    window.digitalData.page.info.userId = userID;
+  }
+} else {
+
+ // Generate Universally Unique Identifier (UUID)
+  var guid = function(a,b) { 
+    for(b=a='';a++<36;b+=a*51&52?(a^15?8^Math.random()*(a^20?16:4):4).toString(16):'-');
+    return b
+  }
+ 
+  var uuid = guid();
+  _satellite.notify("Generating/Storing New UserId -> " + uuid, 1); 
+  
+  if (window.digitalData){
+  	window.digitalData.page.info.userId = uuid;
+  }
+  localStorage.setItem('TM_USERID',uuid);
+}
+});
